@@ -258,6 +258,7 @@ Other behavior (observation capture, instinct thresholds, project scoping, promo
 |   +-- commands/           # Global generated commands
 +-- projects/
     +-- a1b2c3d4e5f6/       # Project hash (from git remote URL)
+    |   +-- project.json    # Per-project metadata mirror (id/name/root/remote)
     |   +-- observations.jsonl
     |   +-- observations.archive/
     |   +-- instincts/
@@ -276,7 +277,7 @@ Other behavior (observation capture, instinct thresholds, project scoping, promo
 | Pattern Type | Scope | Examples |
 |-------------|-------|---------|
 | Language/framework conventions | **project** | "Use React hooks", "Follow Django REST patterns" |
-| File structure preferences | **project** | "Tests in __tests__/", "Components in src/components/" |
+| File structure preferences | **project** | "Tests in `__tests__`/", "Components in src/components/" |
 | Code style | **project** | "Use functional style", "Prefer dataclasses" |
 | Error handling strategies | **project** | "Use Result type for errors" |
 | Security practices | **global** | "Validate user input", "Sanitize SQL" |
@@ -355,7 +356,7 @@ v2.1 is fully compatible with v2.0 and v1:
 
 ## Related
 
-- [Skill Creator](https://skill-creator.app) - Generate instincts from repo history
+- [ECC-Tools GitHub App](https://github.com/apps/ecc-tools) - Generate instincts from repo history
 - Homunculus - Community project that inspired the v2 instinct-based architecture (atomic observations, confidence scoring, instinct evolution pipeline)
 - [The Longform Guide](https://x.com/affaanmustafa/status/2014040193557471352) - Continuous learning section
 
